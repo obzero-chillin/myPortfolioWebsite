@@ -3,5 +3,7 @@
   text-align: center;
 
   margin:0;
+
+  background: linear-gradient(to bottom right, var(--gradient1) 0%,var(--gradient2) 50% ,var(--gradient3)100%);
 }
 

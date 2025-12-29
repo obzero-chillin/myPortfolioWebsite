@@ -18,13 +18,20 @@
   padding:0px;
 
   /*V A R I A B L E S*/
+  --corner:10px;
+  --cardPadding:20px;
 
-  --text:white;
+  --text:black;
   --supress:grey;
+
+  --gradient1:hsl(28.86,35.43%,56.27%);
+  --gradient2:hsl(28.86,35.43%,76.27%);
+  --gradient3:hsl(28.86,35.43%,100%);
 }
 
 body{
   box-sizing: border-box;
   margin:0;
+  min-height:100vh;
 }
 

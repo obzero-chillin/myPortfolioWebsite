@@ -1,0 +1,15 @@
+.projectCard{
+    width:10em;
+    height:fit-content;
+    background-color: var(--gradient1);
+    position: static;
+    border-radius: var(--corner);
+    text-align: left;
+    padding:var(--cardPadding);
+    
+    margin-left: 10px;
+    margin-right: 10px;
+
+    box-shadow: 0px 5px 5px 1px rgb(55, 55, 55);
+
+}
