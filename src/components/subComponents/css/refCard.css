@@ -1,0 +1,14 @@
+/*refCard.css*/
+
+.refCard{
+    max-width:300px;
+    min-height:4rem;
+    background-color: aqua;
+    border-radius: 10px;
+    
+}
+
+.refCard>img{
+    object-fit: contain;
+    width:90%;
+}

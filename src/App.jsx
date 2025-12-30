@@ -2,17 +2,95 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Home from './components/home'
-import Projects from './components/projects'
+
+import Logo from './assets/Logo.svg'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import HomePage from './HomePage'
+import References from './components/references'
+
+
+
+
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+
+
+      <Router>
+      <header id="myHeader">
+        <div id='headerCont'>
+          <img src={Logo} id="logo"></img>
+          <div id='navCont'>
+            <nav>
+              <ul>
+
+                  <li>
+                    <Link to='/'>
+                      About
+                    </Link>
+                  </li>
+                
+                
+                
+                <li>
+                    <Link to="/#projects" >
+                      Projects
+                    </Link>
+                  </li>
+                
+                
+              
+                <li>
+                    <Link to='/#skills'>
+                      Skills
+                    </Link>
+                  </li>
+                
+                
+              
+                <li>
+                    <Link to='/references'>
+                      References
+                    </Link>
+                  </li>
+                
+                
+              
+                <li>
+                    <Link to='github.com'>
+                      Github
+                    </Link>
+                  </li>
+                
+                
+              </ul>
+            </nav>
+
+          </div>
+          
+        </div>
+      </header>
+      <Routes>
+        <Route path='/' element={
+          <HomePage />
+          
+        } >     
+          
+        
+        </Route>
+        <Route path='/references' element={<References />}>
+        </Route>
+
+       
+        
+      </Routes>
+
+      </Router>
       
-      <Home/>
-      <Projects />
     </>
   )
 }

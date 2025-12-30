@@ -7,3 +7,50 @@
   background: linear-gradient(to bottom right, var(--gradient1) 0%,var(--gradient2) 50% ,var(--gradient3)100%);
 }
 
+#logo{
+  width:3em;
+  aspect-ratio: 1;
+  margin-left: 2em;
+  
+
+  
+}
+
+#headerCont{
+    position:fixed;
+
+  width:100%;
+  height:4rem;
+    background-color: rgba(0, 255, 255, 0.277);
+      z-index: 1000;
+display: flex;
+  justify-content: space-between;
+  top:0%;
+  left:0%;
+
+
+}
+#navCont{
+  width:50%;
+  background-color: rgba(137, 43, 226, 0.338);
+  padding: 1em;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+ul{
+  display:flex;
+  gap:2em;
+}
+
+#navCont>nav>ul>li{
+    list-style-type:none;
+
+}
+.topic>{
+  margin-top:9rem;
+
+}

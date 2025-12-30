@@ -1,0 +1,31 @@
+#skills{
+    width:100%;
+    height:100vh;
+    min-height: fit-content;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.s_icon{
+    font-size:50px;
+    margin:30px;
+}
+
+#skillIcons{
+    height:fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    width:50%;
+    max-width:768px;
+    gap:30px;
+    align-items: center;
+    justify-content:space-around ;
+}
+
+.skillItem{
+    border-radius: var(--corner);
+    background-color: beige;
+    border:2px solid rgba(255, 228, 196, 0);
+}
