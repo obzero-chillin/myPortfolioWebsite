@@ -17,12 +17,16 @@ const Projects = ()=>{
     },[location.hash])
     return(
         <>
-        <h1>Projects</h1>
-        
         <div id="projects">
+
+        <h1 id="projectTopic">Projects</h1>
+        
+        <div id="project">
             <ProjectCard />
             
         
+        </div>
+
         </div>
         
         </>

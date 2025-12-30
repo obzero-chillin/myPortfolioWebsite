@@ -1,0 +1,28 @@
+
+
+#about{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height:100vh;
+}
+
+#aboutDesc{
+    border:1px solid black;
+    text-align: left;
+    width:80%;
+    padding:10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#ulCont{
+    width:14em;
+    display: flex;
+    justify-self: left;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+}

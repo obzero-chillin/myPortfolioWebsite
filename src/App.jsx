@@ -7,6 +7,7 @@ import Logo from './assets/Logo.svg'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import HomePage from './HomePage'
 import References from './components/references'
+import About from './components/about'
 
 
 
@@ -29,7 +30,7 @@ function App() {
               <ul>
 
                   <li>
-                    <Link to='/'>
+                    <Link to='/about'>
                       About
                     </Link>
                   </li>
@@ -83,6 +84,9 @@ function App() {
         
         </Route>
         <Route path='/references' element={<References />}>
+        </Route>
+
+        <Route path='/about' element={<About />}>
         </Route>
 
        
