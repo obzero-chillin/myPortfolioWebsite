@@ -1,13 +1,13 @@
 import './css/projectCard.css'
 
-const ProjectCard = ()=>{
+const ProjectCard = ({topic, description, link='', linkName})=>{
     return(
         <div className='projectCard'>
+                <h4>{topic}</h4>
           
-                <p>lorem ipsum and stuff ajfbshjdfbkdsab fdujab ajfb jsaksbfhsdbfhjabfb b fhbfhjaksbf </p>
+                <p>{description}</p>
                     <hr></hr>
-                    <p>hello</p>
-
+                    <button onClick={()=>{window.open({link}, 'blank')}}>View on {linkName}</button>
            
         </div>
     )

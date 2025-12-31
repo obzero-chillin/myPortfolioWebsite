@@ -22,7 +22,14 @@ const Projects = ()=>{
         <h1 id="projectTopic">Projects</h1>
         
         <div id="project">
-            <ProjectCard />
+            <ProjectCard 
+                topic="Feature Flag Service"
+                description="A service for managing feature flags in a microservices architecture."
+                link='https://github.com/obzero-chillin/Feature_flags'
+                linkName='Github'
+            
+            
+            />
             
         
         </div>

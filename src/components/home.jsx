@@ -14,6 +14,8 @@ const Home=()=>{
                         <h1 id="heroh1">
                             Hi, I'm Obonolo
                         </h1>
+                        <br className="break"></br>
+                        <br className="break"></br>
                         <span id="heroDesc">
                                 A fullstack web and app developer in Botswana
                         </span><br></br>

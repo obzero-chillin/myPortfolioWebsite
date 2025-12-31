@@ -3,8 +3,9 @@
 .refCard{
     max-width:300px;
     min-height:4rem;
-    background-color: aqua;
+    background-color: hsl(28.86,35.43%,56.27%);
     border-radius: 10px;
+    color: rgb(0, 0, 0);
     
 }
 
