@@ -76,3 +76,11 @@ a{
   text-decoration: none;
   color:whitesmoke;
 }
+
+#footerHr{
+  width:80%;
+}
+
+.footera{
+  color:green;
+}

@@ -6,10 +6,11 @@
     flex-direction: column;
     align-items: center;
     padding-top:4rem;
+    z-index: 99999 !important;
 }
 
 .s_icon{
-    font-size:50px;
+    font-size:1rem;
     margin:30px;
 }
 
@@ -22,11 +23,21 @@
     gap:30px;
     align-items: center;
     justify-content:space-around ;
+    perspective: 1000px;
 
 }
+
 
 .skillItem{
     border-radius: var(--corner);
     background-color: var(--skillBackground);
     border:2px solid rgba(255, 228, 196, 0);
+    transition:transform 2.0s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform-style: preserve-3d;
+    will-change: transform;
+    
+}
+.skillItem:hover{
+    transform:rotateY(350deg);
+
 }

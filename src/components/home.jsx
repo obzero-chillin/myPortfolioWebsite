@@ -7,6 +7,10 @@ const Home = () => {
   const contRef = useRef(null);
 
   useEffect(() => {
+    document.getElementById("hero").classList.add("loaded");
+
+
+
     const img = imgRef.current;
     const cont = contRef.current;
     if (!img || !cont) return;
@@ -23,14 +27,17 @@ const Home = () => {
       img.style.transform = `scale(${scale})`;
 
       // grow container downward
-      cont.style.height = `calc(100vh + ${progress * maxExtraHeight}px)`;
+      if(window.innerWidth<425){
+        cont.style.height = `calc(100vh + ${progress * maxExtraHeight}px)`;
+
+      }
     }
 
     window.addEventListener("scroll", handleScroll);
     handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  });
 
   return (
     <header id="homeCont" ref={contRef}>

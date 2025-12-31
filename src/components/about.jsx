@@ -1,11 +1,49 @@
 import React from 'react'
 import './css/about.css'
+import { useEffect } from 'react'
+import pfp from '../assets/pfp.png'
 
 const About = () => {
+  useEffect(() => {
+    const liners = document.querySelectorAll('.liner');
+
+    liners.forEach(l => {
+      l.offsetHeight; // forces reflow, yes it's ugly
+      l.classList.add('aboutOpen');
+    });
+  setTimeout(() => {
+    document.querySelector('#animCont').style.backgroundColor = 'transparent';
+    document.querySelector('#about').style.opacity = '1';
+    
+
+    liners.forEach(l => {
+      l.offsetHeight; // forces reflow, yes it's ugly
+      l.classList.remove('aboutOpen');
+    });
+    
+    
+  }, 3500);
+  setTimeout(() => {
+    document.querySelector('#animCont').style.display = 'none';
+  }, 5000);
+}, []);
+  
+
   return (
+    <>
+      <div id='animCont'>
+        <div className='liner'></div>
+        <div className='liner'></div>
+        <div className='liner'></div>
+        <div className='liner'></div>
+        <div className='liner'></div>
+      </div>
     <div id='about'>
         <h1>About</h1>
         <div id='aboutDesc'>
+        <div id="profImgCont">
+          <img src={pfp} id='profilepic'></img>
+        </div>
 
         <h2>Coding experience:</h2>
         <p>6 years.</p>
@@ -47,6 +85,7 @@ const About = () => {
 
         </div>
     </div>
+    </>
   )
 }
 

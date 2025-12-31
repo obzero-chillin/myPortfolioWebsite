@@ -44,7 +44,8 @@ body{
   bottom:0%;
   height:82vh;
   width:20%;
-  background-color: hsl(141,21.74%,18.04%) !important;
+  background-color: hsl(141, 22%, 18%)!important;
+  backdrop-filter: blur(50px) !important;
   padding: 1em;
   display:flex;
   flex-wrap: wrap;
@@ -120,10 +121,16 @@ body{
   .s_icon{
     font-size: 20px;
   }
-  
+  #homeCont{
+    margin-top:6rem;
+  }
 
 
 
 
   }
-
+@media (screen<460px){
+  #heroh1{
+    margin-top:100rem !important;
+  }
+}

@@ -10,7 +10,7 @@ import References from './components/references'
 import About from './components/about'
 import Contact from './components/contact'
 import { RiMenu5Fill } from "react-icons/ri";
-
+import ScrollManager from './ScrollManager'
 
 
 
@@ -57,10 +57,11 @@ function App() {
 
 
       <Router>
+      <ScrollManager />
       <header id="myHeader">
         <div id='headerCont'>
           <div id='navsec1'>
-            <RiMenu5Fill size={30} id='burger' role='button' onClick={()=>{
+            <RiMenu5Fill size={30} color='white' id='burger' role='button' onClick={()=>{
                document.querySelector('#navCont').classList.toggle('open')
             }}/>
             <Link to='/'>
@@ -143,6 +144,15 @@ function App() {
       </Routes>
 
       </Router>
+
+      <footer></footer>
+      <hr id="footerHr"></hr>
+      <h6>Designed by aom</h6>
+      <h6><em><a className='footera' href='/contact'>Contact</a></em></h6>
+      <h6><em><a className='footera'>Github</a></em></h6>
+      <h6><em><a className='footera'>Instagram</a></em></h6>
+
+      
 
     </>
   )
