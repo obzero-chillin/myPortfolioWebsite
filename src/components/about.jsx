@@ -7,6 +7,18 @@ const About = () => {
         <h1>About</h1>
         <div id='aboutDesc'>
 
+        <h2>Coding experience:</h2>
+        <p>6 years.</p>
+
+        <h2>Certification:</h2>
+        <p><a id="fcc" href='https://freecodecamp.org/certification/thatonedude/javascript-algorithms-and-data-structures-v8' target='_blank'
+        >freeCodeCamp Certificate</a> in Javascript Data Structures and Algorithms.</p>
+
+        <hr></hr>
+        <hr></hr>
+
+        <h2>History:</h2>
+
         <p>
             I first started coding in Primary school, where I made my first robots with arduinos  (Std 7) using the Scratch software through a school club.
             Shortly after I adopted Python as my first programming language, where my journey truly started.

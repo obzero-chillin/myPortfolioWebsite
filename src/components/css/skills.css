@@ -27,6 +27,6 @@
 
 .skillItem{
     border-radius: var(--corner);
-    background-color: beige;
+    background-color: var(--skillBackground);
     border:2px solid rgba(255, 228, 196, 0);
 }

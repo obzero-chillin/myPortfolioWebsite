@@ -13,3 +13,9 @@
     box-shadow: 0px 5px 5px 1px rgb(55, 55, 55);
 
 }
+
+.projectCard>button{
+    height:40px;
+    font-size: 0.8em;
+
+}

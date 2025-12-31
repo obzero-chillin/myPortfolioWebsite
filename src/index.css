@@ -23,11 +23,13 @@
 
   --text:black;
   --supress:grey;
+  --skillBackground:beige;
 
   --gradient1:hsl(28.86,35.43%,56.27%);
   --gradient2:hsl(28.86,35.43%,76.27%);
   --gradient3:hsl(28.86,35.43%,100%);
 }
+
 
 body{
   box-sizing: border-box;
