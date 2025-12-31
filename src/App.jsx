@@ -149,8 +149,8 @@ function App() {
       <hr id="footerHr"></hr>
       <h6>Designed by aom</h6>
       <h6><em><a className='footera' href='/contact'>Contact</a></em></h6>
-      <h6><em><a className='footera'>Github</a></em></h6>
-      <h6><em><a className='footera'>Instagram</a></em></h6>
+      <h6><em><a href='https://github.com/obzero-chillin' target='_blank'  className='footera'>Github</a></em></h6>
+      <h6><em><a href='https://instagram.com/o.b.o.n.o.l.o/' target='_blank' className='footera'>Instagram</a></em></h6>
 
       
 
