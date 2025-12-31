@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import HomePage from './HomePage'
 import References from './components/references'
 import About from './components/about'
+import Contact from './components/contact'
 import { RiMenu5Fill } from "react-icons/ri";
 
 
@@ -132,6 +133,9 @@ function App() {
         </Route>
 
         <Route path='/about' element={<About />}>
+        </Route>
+
+        <Route path='/contact' element={<Contact />}>
         </Route>
 
        

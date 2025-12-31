@@ -8,10 +8,11 @@
 }
 #imgCont{
     width:100%;
-    height:100%;
     margin: 0;
     padding: 0;
+    height: 100vh;
     overflow: hidden;
+    position: relative;
 }
 
 #hero{
@@ -57,13 +58,29 @@
 #backgroundImg {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
-    object-position: center; 
+    object-fit: cover;
+    object-position: center;
     filter: brightness(50%);
-    
-    border: none;
+    transform-origin: top center;
+    will-change: transform;
 
 }
 .break{
     display:none;
+}
+
+#contactBtn{
+    width:200px;
+    height:50px;
+    font-size: 1rem;
+    border-radius: var(--corner);
+    border:none;
+}
+
+#contactBtn:hover{
+    cursor: pointer;
+}
+
+#heroItemsCont>p{
+    margin-bottom: 60px;
 }
