@@ -7,7 +7,7 @@ const ProjectCard = ({topic, description, link='', linkName})=>{
           
                 <p>{description}</p>
                     <hr></hr>
-                    <button onClick={()=>{window.open({link}, 'blank')}}>View on {linkName}</button>
+                    <button onClick={()=>{window.open(link, 'blank')}}>View on {linkName}</button>
            
         </div>
     )
