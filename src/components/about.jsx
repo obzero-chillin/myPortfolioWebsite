@@ -62,7 +62,7 @@ const About = () => {
             Shortly after I adopted Python as my first programming language, where my journey truly started.
             Since then, I've expanded my skillset to web development getting into frameworks like React and runtime environments like NodeJs.
             After getting my freeCodeCamp certificate I ventured into software development, learning languages like Dart and its app development library Flutter.
-            I lowkey fell in love with it and started contributing to open source projects, including one of my own called the Feature Flag service which you can view on
+            I fell in love with it and started contributing to open source projects, including one of my own called the Feature Flag service which you can view on
             Github.
         </p>
         <h2>My Areas</h2>
